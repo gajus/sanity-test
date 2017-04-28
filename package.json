@@ -16,13 +16,10 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-react-optimize": "^1.0.1",
     "babili-webpack-plugin": "0.0.11",
-    "bluefeather": "^2.5.0",
-    "card-validator": "^4.0.0",
     "clean-webpack-plugin": "^0.1.16",
     "compression": "^1.6.2",
     "css-loader": "^0.28.0",
     "css-module-flow": "^1.0.0",
-    "date-fns": "^1.28.4",
     "debug": "^2.6.6",
     "ejs": "^2.5.6",
     "eslint": "^3.19.0",
@@ -31,22 +28,12 @@
     "express-basic-auth": "^1.0.2",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.11.1",
-    "flow-bin": "^0.45.0",
-    "flow-coverage-report": "^0.3.0",
-    "history": "^4.6.1",
-    "lodash": "^4.17.4",
-    "lodash-webpack-plugin": "^0.11.3",
     "morgan": "^1.8.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-hot-loader": "^3.0.0-beta.6",
     "react-redux": "^5.0.4",
-    "react-router": "^4.1.1",
-    "react-router-dom": "^4.1.1",
-    "react-router-redux": "^5.0.0-alpha.6",
     "redux": "^3.6.0",
-    "redux-saga": "^0.14.8",
-    "redux-thunk": "^2.2.0",
     "resolve-url-loader": "^2.0.2",
     "sass-loader": "^6.0.3",
     "serve-static": "^1.12.2",
@@ -55,19 +42,11 @@
     "webpack-bundle-analyzer": "^2.4.0",
     "css-literal-loader": "^0.2.0",
     "webpack-dev-middleware": "^1.10.2",
-    "webpack-hot-middleware": "^2.18.0",
-    "whatwg-fetch": "^2.0.3"
+    "webpack-hot-middleware": "^2.18.0"
   },
   "private": true,
-  "repository": {
-    "type": "git",
-    "url": "git@git.anuary.com:applaudience/applaudience-com.git"
-  },
   "scripts": {
-    "analyze-bundle": "ANALYZE_BUNDLE=1 NODE_ENV=production webpack --config src/bin/webpack.config.production.js",
     "dev": "NODE_ENV=development DEBUG='applaudience.com:*' npm start",
-    "flow-coverage": "flow-coverage-report -i \"./src/**/*.js\" --threshold 70",
-    "lint": "eslint src test && flow",
     "start": "node ./src/bin/index.js"
   }
 }
