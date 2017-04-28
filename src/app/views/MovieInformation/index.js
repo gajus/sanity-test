@@ -20,6 +20,8 @@ class MovieInformation extends Component {
   }
 
   render () {
+    console.log('movie is definitely not null', this.props.movie);
+
     return <button onClick={this.handleClose}>click me</button>;
   }
 }
