@@ -10,9 +10,7 @@
     "transform-object-rest-spread",
     "transform-class-properties",
     "transform-node-env-inline",
-    "transform-flow-strip-types",
-    "date-fns",
-    "lodash-modularize"
+    "transform-flow-strip-types"
   ],
   "presets": [
     [

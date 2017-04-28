@@ -19,21 +19,6 @@ module.exports = {
       {
         include: path.resolve(__dirname, '../app'),
         loader: 'babel-loader',
-        options: {
-          plugins: [
-            [
-              'react-css-modules',
-              {
-                context: common.context,
-                filetypes: {
-                  '.scss': 'postcss-scss'
-                },
-                generateScopedName: '[name]___[local]___[hash:base64:5]',
-                webpackHotModuleReloading: true
-              }
-            ]
-          ]
-        },
         test: /\.js$/
       },
       {
