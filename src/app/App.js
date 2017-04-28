@@ -5,9 +5,7 @@ import {
   Provider
 } from 'react-redux';
 import MovieInformation from './views/MovieInformation';
-import configureStore from './configureStore';
-
-const store = configureStore(undefined, history);
+import store from './store';
 
 class App extends React.Component {
   render () {
