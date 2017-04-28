@@ -2,13 +2,7 @@
   "env": {
     "development": {
       "plugins": [
-        "transform-export-default-name",
         "react-hot-loader/babel"
-      ]
-    },
-    "production": {
-      "presets": [
-        "react-optimize"
       ]
     }
   },
