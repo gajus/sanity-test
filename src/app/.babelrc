@@ -1,0 +1,37 @@
+{
+  "env": {
+    "development": {
+      "plugins": [
+        "transform-export-default-name",
+        "react-hot-loader/babel"
+      ]
+    },
+    "production": {
+      "presets": [
+        "react-optimize"
+      ]
+    }
+  },
+  "plugins": [
+    "transform-object-rest-spread",
+    "transform-class-properties",
+    "transform-node-env-inline",
+    "transform-flow-strip-types",
+    "date-fns",
+    "lodash-modularize"
+  ],
+  "presets": [
+    [
+      "env",
+      {
+        "loose": false,
+        "modules": false,
+        "targets": {
+          "chrome": 58
+        },
+        "useBuiltIns": true
+      }
+    ],
+    "react"
+  ]
+}
