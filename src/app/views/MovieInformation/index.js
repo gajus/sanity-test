@@ -16,7 +16,7 @@ class MovieInformation extends Component {
   };
 
   handleClose = (self) => {
-    console.log('sanity check (movie should not be null)', this.props);
+    console.log('sanity check (movie should not be null)', this.props.movie);
   }
 
   render () {
@@ -26,7 +26,7 @@ class MovieInformation extends Component {
   }
 }
 
-const mapStateToProps = (state): $Shape<MovieTimesPropsType> => {
+const mapStateToProps = (state) => {
   return {
     movie: state.movieInformation.movie
   };
